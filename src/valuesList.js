@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import './valueList.scss';
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+</style>
 
 
 
@@ -21,14 +25,18 @@ function ValuesList() {
 
   return (
     <>
-      <Link to="/">Fuck go back</Link>
-      {
-        data.map((item, index) => (
-         <ul key={item.ID}>
-            {item.Name}: <br /> {item.Description}
-          </ul> 
-        ))
-      }
+      <div className="headerLink">
+        <Link to="/" className="linkMain"> ←Back to Vin Code Checker</Link>
+      </div>
+      <div className="testStyle">
+        {
+          data.map((item, index) => (
+            <ul key={item.ID}>
+              {item.Name}: <br /> {item.Description}
+            </ul>
+          ))
+        }
+      </div>
     </>
   );
 }
