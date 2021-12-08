@@ -29,10 +29,10 @@ function ValuesList() {
           ←Back to Vin Code Checker
         </Link>
       </div>
-      <div className="testStyle">
+      <div className="listStyle">
         {data.map((item, index) => (
-          <ul key={item.ID} className="itemtest">
-            <div className="test"> {item.Name}:</div>
+          <ul key={item.ID} className="itemStyle">
+            <div className="nameStyle"> {item.Name}:</div>
             <div dangerouslySetInnerHTML={{ __html: item.Description }} />
           </ul>
         ))}
