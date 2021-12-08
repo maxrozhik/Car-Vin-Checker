@@ -36,6 +36,7 @@ function APIFetch() {
       <Form className="inputs" onChange={(e) => setVin(e.target.value)}>
         <Form onChange={handleSubmit(onChange)}>
           <input
+            id="vin"
             autoComplete="on"
             className="inputText"
             placeholder="Vin"
