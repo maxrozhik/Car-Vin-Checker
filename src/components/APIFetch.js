@@ -28,7 +28,7 @@ function APIFetch() {
   return (
     <>
       <div className="headerLink">
-        <Link to="/variables" className="linkMain">
+        <Link to="/testvin/variables" className="linkMain">
           {" "}
           All variables{" "}
         </Link>
