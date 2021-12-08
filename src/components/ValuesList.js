@@ -19,12 +19,10 @@ function ValuesList() {
       setData(json.Results);
     };
     fetchData();
-    console.log(Response);
   }, []);
 
   return (
     <>
-      <div dangerouslySetInnerHTML={{ __html: data["Description"] }}></div>
       <div className="headerLink">
         <Link to="/" className="linkMain">
           {" "}
@@ -33,8 +31,9 @@ function ValuesList() {
       </div>
       <div className="testStyle">
         {data.map((item, index) => (
-          <ul key={item.ID}>
-            {item.Name}: <br /> {item.Description}
+          <ul key={item.ID} className="itemtest">
+            <div className="test"> {item.Name}:</div>
+            <div dangerouslySetInnerHTML={{ __html: item.Description }} />
           </ul>
         ))}
       </div>

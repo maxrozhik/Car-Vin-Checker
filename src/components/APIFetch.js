@@ -36,12 +36,16 @@ function APIFetch() {
       <Form className="inputs" onChange={(e) => setVin(e.target.value)}>
         <Form onChange={handleSubmit(onChange)}>
           <input
+            autoComplete="off"
             className="inputText"
             placeholder="Vin"
             type="text"
             {...register("vin", {
               required: "required",
               minLength: {
+                value: 17,
+              },
+              maxLength: {
                 value: 17,
               },
             })}
@@ -59,7 +63,7 @@ function APIFetch() {
         {data.map((item, index) =>
           item.Value ? (
             <ul key={item.VariableId}>
-              {item.Variable}: <br /> {item.Value}
+              {item.Variable}: {item.Value}
             </ul>
           ) : null
         )}
