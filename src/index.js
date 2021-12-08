@@ -12,8 +12,8 @@ const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
     <Routes>
-      <Route path="/testvin/" element={<APIFetch />} />
-      <Route path="/testvin/variables/" element={<ValuesList />} />
+      <Route path="/" element={<APIFetch />} />
+      <Route path="/variables/" element={<ValuesList />} />
     </Routes>
   </BrowserRouter>,
   rootElement

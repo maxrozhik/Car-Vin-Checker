@@ -24,7 +24,7 @@ function ValuesList() {
   return (
     <>
       <div className="headerLink">
-        <Link to="/testvin" className="linkMain">
+        <Link to="/" className="linkMain">
           {" "}
           ←Back to Vin Code Checker
         </Link>
