@@ -12,8 +12,8 @@ const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<APIFetch />} />
-      <Route path="variables" element={<ValuesList />} />
+      <Route path="/gh-pages-url" element={<APIFetch />} />
+      <Route path="/gh-pages-url/variables" element={<ValuesList />} />
     </Routes>
   </BrowserRouter>,
   rootElement
